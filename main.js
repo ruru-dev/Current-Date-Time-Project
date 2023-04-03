@@ -9,42 +9,96 @@ console.log(new Date)
 
 const displayDate = () => {
   const currentDate = new Date()
-
-  document.getElementById("display-element").innerHTML = currentDate;
+  let currentDay = currentDate.getDay()
+  let currentTime = currentDate.getTime()
+  document.getElementById("display-element").innerHTML = `The current day is ${currentDay} and the 
+    current time is ${currentTime}`;
 }
  
 
 // Write a JavaScript program to convert a number to a string.
-
-
+const numToString = (num) => {
+ let newString = num.toString();
+ console.log(newString);
+ document.getElementById("display-num-to-string").innerHTML = newString;
+}
 
 // Write a JavaScript program to convert a string to the number.
 
-
+const stringToNum = (word) => {
+  let newNum = parseInt(word);
+  console.log(newNum);
+  document.getElementById("display-string-to-num").innerHTML = newNum;
+ }
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
-  // * Boolean
-  // * Null
-  // * Undefined
-  // * Number
-  // * NaN
-  // * String
-  
+  const printType = (data) => {
+    console.log(typeof data);
+    document.getElementById("display-type").innerHTML = typeof data;
+   }
 
-  
+// NOTE: Input fields will always output string as the type.
+
+   // * Boolean
+   // * Null
+   // * Undefined
+   // * Number
+   // * NaN
+   // * String
+
 // Write a JavaScript program that adds 2 numbers together.
 
-
+const addingNumbers = (num1, num2) => {
+  let sum = parseInt(num1) + parseInt(num2);
+  console.log(sum);
+  document.getElementById("add-numbers-result").innerHTML = sum;
+}
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const areRachelsChildren = (gender1, gender2) => {
 
+  let message = '';
+  
+  if ((gender1 === "male") && (gender2 === "male")) {
+    message = "Rachel has two boys!"
+  }
+  else{
+    message = "These are not Rachel's children!"
+  }
+  console.log(message);
+  document.getElementById("display-children").innerHTML = message;
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const rachelIsHappy = (sleep, iceCream) => {
 
+  let message = '';
+
+  if ((sleep) || (iceCream)) {
+    message = "Rachel very happy!"
+  }
+  else {
+    message = "Rachel tired and hangry"
+  }
+  document.getElementById("display-rachel-mood").innerHTML = message;
+}
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const rachelNotEat = (rawFood,peas) => {
+
+  let message = '';
+
+  if (!rawFood && !peas) {
+    message = "Rachel will eat"
+  }
+  else {
+    message = "Rachel will not eat"
+  }
+  document.getElementById("display-rachel-eat").innerHTML = message;
+}
 
 // ***************************
 //         PART TWO

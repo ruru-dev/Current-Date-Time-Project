@@ -11,5 +11,48 @@
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
     <hr/>
+    <div id="display-num-to-string"></div>
+    <label for="number-input">Number to String</label>
+    <input id = "number-input" type="number">
+    <button onclick="numToString(document.getElementById('number-input').value)">Submit</button>
+    <hr/> 
+    <div id="display-string-to-num"></div>
+    <label for="string-input">String to Number</label>
+    <input id = "string-input" type="text">
+    <button onclick="stringToNum(document.getElementById('string-input').value)">Submit</button>
+    <hr/> 
+    <div id="display-type"></div>
+    <label for="type-input">Data Type</label>
+    <input id = "type-input" type="text">
+    <button onclick="printType(document.getElementById('type-input').value)">Submit</button>
+    <hr/>
+    <div id="add-numbers-result"></div>
+    <label for="add-numbers-1">Operand 1</label>
+    <input id = "add-numbers-1" type="number">
+    <label for="add-numbers-2">Operand 2</label>
+    <input id = "add-numbers-2" type="number">
+    <button onclick="addingNumbers((document.getElementById('add-numbers-1').value), (document.getElementById('add-numbers-2').value))">Submit</button>
+    <hr/>
+    <div id="display-children"></div>
+    <label for="gender1">Gender of Child 1</label>
+    <input id = "gender1" type="text">
+    <label for="gender2">Gender of Child 2</label>
+    <input id = "gender2" type="text">
+    <button onclick="areRachelsChildren((document.getElementById('gender1').value), document.getElementById('gender2').value)">Submit</button>
+    <hr/>
+    <div id="display-rachel-mood"></div>
+    <label for="sleep">Sleep</label>
+    <input id = "sleep" type="checkbox">
+    <label for= "icecream">Icecream</label>
+    <input id = "icecream" type="checkbox">
+    <button onclick="rachelIsHappy((document.getElementById('sleep').checked), (document.getElementById('icecream').checked))">Submit</button>
+    <hr/>
+    <div id="display-rachel-eat"></div>
+    <label for="raw-food">Raw Food</label>
+    <input id = "raw-food" type="checkbox">
+    <label for= "peas">Peas</label>
+    <input id = "peas" type="checkbox">
+    <button onclick="rachelNotEat((document.getElementById('raw-food').checked), (document.getElementById('peas').checked))">Submit</button>
+    <hr/>
   </body>
 </html>
